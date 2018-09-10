@@ -75,6 +75,11 @@ cc.Class({
         supply.y = (Math.random())*100 + 500; // 500<y<600
         this.scheduleOnce(this._gen_supply.bind(this),50);
     },
+    // 返回
+    back:function(){
+        cc.director.loadScene("welcom")
+    },
+
     start () {
        
     },
